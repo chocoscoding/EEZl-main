@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Accountbought.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Accounts Bought</title>
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo"><img src="ee.jpg" alt=""></div>
+        <div class="logo_name">Eezl</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      
+      <li >
+        <a href="index.html">
+          <i class='bx bx-home' ></i>
+          <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+      </li>
+      <li >
+       <a href="Account.html" >
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Account</span>
+       </a>
+       <span class="tooltip">Account</span>
+     </li>
+     <li>
+        <a href="Dashboard.html" >
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+     <li>
+       <a href="Chat.html">
+         <i class='bx bx-message-detail' ></i>
+         <span class="links_name">Chat</span>
+       </a>
+       <span class="tooltip">Chat</span>
+     </li>
+     <li>
+       <a href="projectreview.html">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Project Review</span>
+       </a>
+       <span class="tooltip">Project Review</span>
+     </li>
+     <li>
+       <a href="AccountsBought.html" class="active">
+         <i class='bx bx-cart'></i>
+         <span class="links_name">Accounts Bought</span>
+       </a>
+       <span class="tooltip">Accounts Bought</span>
+     </li>
+
+     <li class="profile">
+      <p style="color: white;line-height: 2.4;">LOGOUT</p>
+         <i class='bx bx-log-out' id="logout" onclick="logOut()"></i>
+     </li>
+    </ul>
+  </div>
+
+  <section class="main-section">
+    <div class="text">Accounts Bought</div>
+    <div class="text-2">Status: <span>Online</span></div>
+    <div class="ProjectId-container">
+        <label for="Project ID">Purchase ID</label>
+        <input type="text" class="projectidinput" placeholder="Input Your Purchase Id" name="ProjectId" id="ProjectId">
+        <button id="projectidinputsubmit">SUBMIT</button>
+    </div>
+    <main>
+      <div class="box">
+        <div class="box-inner">
+                  <div class="name-inner">
+        <h3>Purchase Id- <span class="uInfo" id="purchaseid">No Purchase ID</span>  </h3></div> 
+        </div>
+        <div class="box-inner">
+                  <div class="name-inner">
+        <h3>Price Bought- <span class="uInfo" id="peicebought">No Purchase ID</span>  </h3></div> 
+        </div>
+        <div class="box-inner">
+                  <div class="name-inner">
+        <h3>Account Username- <span class="uInfo" id="accountusername">No Purchase ID</span>  </h3></div> 
+        </div>
+        <div class="box-inner">
+                  <div class="name-inner">
+        <h3>Account Mail- <span class="uInfo" id="accountmail">No Purchase ID</span>  </h3></div> 
+        </div>
+        <div class="box-inner">
+                  <div class="name-inner">
+        <h3>Account Password- <span class="uInfo" id="accountpasswrd">No Purchase ID</span>  </h3></div> 
+        </div>
+        
+        <div class="box-inner">
+                  <div class="name-inner">
+        <h3>Rank- <span class="uInfo" id="rank">No Purchase ID</span>  </h3></div> 
+        </div>
+        <div class="box-inner">
+                  <div class="name-inner">
+        <h3>Division- <span class="uInfo" id="division">No Purchase ID</span>  </h3></div> 
+        </div>
+        <div class="box-inner">
+                  <div class="name-inner">
+        <h3>Mark- <span class="uInfo" id="mark">No Purchase ID</span>  </h3></div> 
+        </div>
+        <div class="box-inner">
+                  <div class="name-inner">
+        <h3>Matches Won- <span class="uInfo" id="matcheswon">No Purchase ID</span>  </h3></div> 
+        </div>
+
+        </div>
+    </div> 
+     
+
+      <div class="box2">
+        <div class="headi">
+          Accounts Bought
+        </div>
+        <h1 id="nocontent">LOADING...</h1>
+        <div class="projectLbody">
+          <table id="tablebody" style="width:100%">
+            <tr class="head">
+              <th id="Dateholder">Date of Order</th>
+              <th id="Projectidplaceholder">Purchase Id</th>
+              <th id="copyidplaceholder">Copy Id</th>
+            </tr>
+
+          </table>
+        </div>
+    </div> 
+
+           
+        
+    </main>
+</section>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+
+  <script src="Verticalnav.js"></script>
+  <script src="AccountsBought.js"></script>
+
+
+</body>
+</html>

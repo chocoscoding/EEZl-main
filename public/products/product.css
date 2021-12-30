@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #090539;
+}
+
+.main_info{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: #f5fafa;
+}
+.imagecont{
+    height: 26rem;
+    width: 50%;
+    background-color: #f0f0f0;
+}
+.imageshow{
+    height: 70%;
+    background-color: #f5f5f5;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    overflow: hidden;
+}
+.imageshow img{
+    width: auto;
+    height: 100%;
+}
+.imagetgle{
+    height: 27%;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.infocont{
+    height: 26rem;
+    width: 50%;
+    color: #110d39;
+
+}
+.innerimagecont{
+    border: 1px solid #110d39;
+    width: 19%;
+    background-color: #110d39;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.productno{
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: #090539;
+    border: 1px solid #1b146c47;
+    box-shadow: 0px 0px 11px #50d8d84c;
+    margin-bottom: 0.2%;
+    color: #ffffff;
+}
+.productno span{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.productdetails{
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 1%;
+}
+.productdetailsm{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+.productdetailsm span{
+    margin-left: 3%;
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin-bottom: 1%;
+}
+.bids{
+    background-color: #110d39;
+    display: flex;
+    flex-wrap: wrap;
+}
+.side1{    width: 50%;
+    background-color: #110d34;
+    padding: 1.3%;}
+ .side2{
+    width: 50%;
+    height: 39rem;
+    padding: 1.3%;
+}
+.placebid{
+    font-weight: 900;
+    padding: 1%;
+    font-size: 2rem;
+    color: #e4ffff;
+    width: 100%;
+}
+#placebidi{
+    background-color: #ecfaface;
+    color: #110d39;
+    height: 3rem;
+    width: 100%;
+    border: 1px solid #1b146c47;
+    border-radius: 3px;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    border-top: 1px solid #e4ffff;
+}
+#placebidi:focus{
+    background-color: #e4ffff;
+    box-shadow: 0px 0px 10px #e4ffff8f;
+}
+.pb{
+    border: 1px solid #1b146c47;
+    background-color: #e4ffffa7;
+    border-radius: 5px;
+    height: 4rem;
+    width: 50%;
+    color: #090539;
+    font-weight: 900;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.pb:hover{
+    background-color: #e4ffff;
+    box-shadow: 0px 0px 10px #e4ffff8f;
+}
+.topbidcont{
+    padding: 1%;
+    
+}
+.tbinner{
+    height: 6rem;
+    margin-top: 0.4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+.tbpi{
+    border: 2px solid #3a2ec2a7;
+    overflow: hidden;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+.tbp{
+    width: 83%;
+    border: 1px solid #3a2ec2a7;
+    height:6rem;
+    border-radius: 15px;
+    color: #e4ffff;
+    background: #3a2ec21f;
+    box-shadow: 0px 0px 10px #5647f75a;
+    text-align: left;
+}
+.username, .bidtime, .bid{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 2%;
+    margin-bottom: 0.8%;
+    text-transform: capitalize;
+
+}
+.username span, .bidtime span, .bid span{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.otherbidscont{
+    overflow-y: scroll;
+    margin-top: 2%;
+    height: 70%;
+}
+.otherbidscont ul{
+    list-style-type: none;
+    width: inherit;
+    height: inherit;
+}
+.otherbidscont ul li{
+    margin-bottom: 3%;
+}
+
+.otherbidscont::-webkit-scrollbar{
+    display: none;
+}
+
+.obinner{
+    height: 5,8rem;
+    margin-top: 0.28%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+.obpi{
+    border: 2px solid #5647f7f7;
+    overflow: hidden;
+    height: 3.8rem;
+    width: 3.8rem;
+    border-radius: 50%;
+}
+.obp{
+    width: 83%;
+    border: 1px solid #5647f7f7;
+    height:5.8rem;
+    border-radius: 15px;
+    color: #bbe2e2;
+    background: rgba(52, 37, 216, 0.285);
+    text-align: left;
+}
+.username, .bidtime, .bid{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 2%;
+    margin-bottom: 0.8%;
+    text-transform: capitalize;
+
+}
+.username span, .bidtime span, .bid span{
+    font-size: 0.8rem;
+    font-weight: 400;
+}

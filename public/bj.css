@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #090539;
+}
+/* showmore */
+.showmore{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 3rem 0;
+}
+.showmore button{
+    background-color: #50D8D7;
+    width: 14%;
+    border-radius: 6px;
+    font-size: large;
+    font-weight: 600;
+    color: #090539;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.showmore button:hover{
+    font-weight: 900;
+    font-size: larger;
+    box-shadow: 0px 0px 10px #50d8d87d;
+}
+.showjobs{
+    width: 100%;
+}
+.moreinfo{
+    width: 100%;
+    display:none;
+    -webkit-backdrop-filter: blur( 7px );
+    backdrop-filter: blur( 7px );
+    background-color: #08071c3c;
+    margin-bottom: 60rem;
+}   
+.showjobs ul{
+    list-style: none;
+    display: flex;
+    margin: auto;
+    width: 99.5%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.showjobs ul li{
+    width: 47%;
+    margin: 1.1rem 0 1.1rem 0;
+    height: 17rem;
+    border: 1px solid #50d8d83f;
+    border-radius: 10px;
+    position: relative;
+}
+.linebox{
+    height: 15%;
+    width: 100%;
+    border-radius: 9.5px 9.5px 0px 0px ;
+    margin-bottom: 1.5%;
+    padding: 0% 0% 0% 2%;
+    color: #f4ffff;
+}
+.linebox h1 span i{
+    font-size: 0.67rem;
+}
+.ldin{
+    animation-name: shine;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes shine {
+    0%{opacity: 5%;}
+    100%{opacity: 100%;}
+}
+.main_info{
+    width: 100%;
+    height: 69%;
+    left: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px 0px 0px 3px;
+}
+.Bronze{
+    background-color: rgba(176, 140, 87, 0.4);
+    box-shadow: 0 3px 10px 0 rgba(64, 66, 109, 0.288);
+}
+.Iron{
+    background-color: rgba(161, 157, 148, 0.4);
+    box-shadow: 0 3px 10px 0 rgba(64, 66, 109, 0.288);
+}
+.Silver{
+    background-color: rgba(143, 126, 196, 0.4);
+    box-shadow: 0 3px 10px 0 rgba(64, 66, 109, 0.288);
+}
+.Gold{
+    background-color: rgba(255, 191, 0, 0.4);
+    box-shadow: 0 3px 10px 0 rgba(64, 66, 109, 0.288);
+}
+.Emerald{
+    background-color: rgba(0,250,154,0.4);
+    box-shadow: 0 3px 10px 0 rgba(64, 66, 109, 0.288);
+}
+.Platinum{
+    background-color: rgba(92, 194, 192, 0.4);
+    box-shadow: 0 3px 10px 0 rgba(64, 66, 109, 0.288);
+}
+.Diamond{
+    background-color: rgba(82, 11, 206, 0.4);
+    box-shadow: 0 3px 10px 0 rgba(64, 66, 109, 0.288);
+}
+.Master{
+    background-color: rgba(119, 19, 185, 0.4);
+    box-shadow: 0 3px 10px 0 rgba(64, 66, 109, 0.288);
+}
+.main_info p{
+    font-size: large;
+    font-weight: 900;
+    color: #f4ffff;
+}
+.main_info p span{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.openjob{
+    position: absolute;
+    width: 7rem;
+    height: 2.3rem;
+    bottom: 0;
+    right: 0;
+    color: #f4ffff;
+    border-radius: 10px 0px 10px 0px;
+    line-height: 2.3rem;
+    text-align: center;
+    font-weight: 900;
+    font-size: medium;
+    cursor: pointer;
+}
+.openjob:hover{
+    text-decoration: underline;
+}
+
+.closebox{
+    margin-top: 1%;
+    height: 3.5rem;
+    padding-left: 1%;
+}
+.closebox button{
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid #f4ffff29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a19a9a61;
+    cursor: pointer;
+    color: #f4ffff;
+}
+.closebox button i{
+    font-size: 1.4rem;
+}
+.closebox button:hover{
+    opacity: 70%;
+}
+.display{
+    border: 1px solid rgba(255, 255, 255, 0.476);
+    margin: auto auto 10% auto;
+    width: 90%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: #f4ffff;
+}
+.inner3{
+    border: 1px solid rgba(255, 255, 255, 0.476);
+    margin: auto auto 10% auto;
+    width: 90%;
+    height: 40rem;
+    font-size: 4rem;
+    padding: 1%;
+    text-align: center;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    border-radius: 20px;
+    background-color: #f4ffff;
+}
+.sixe{
+    font-size: 2.5rem;
+}
+#ldinloadert i{
+    font-style: normal;
+    text-decoration: underline;
+    color: rgb(1, 91, 1);
+    font-weight: 900;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.display .inner1{
+    border-right: 1.2px solid rgba(0, 0, 0, 0.209);
+    width: 69%;
+    border-radius: 20px 0px 0px 20px;
+}
+.display .inner2{
+    width: 25%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0px 0px 20px;
+    height: 40rem;
+}
+#aj{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #090539;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    color: #f4ffff;
+    border-radius: 20px;
+    margin-bottom: 8%;
+}
+#aj:hover{
+    box-shadow:0px 0px 7px #090539d2;
+    font-weight: 900;
+}
+.st{
+    font-size: 2.4rem;
+    margin-bottom: 5%;
+}
+.st span{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.inner1 p{
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    font-weight: 900;
+}
+.inner1 p span{
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+#detils{
+    font-size: 10px;
+}
+.filter{
+    border: 1px solid #50D8D7;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #09053985;
+    margin: auto;
+    color: #f4ffff;
+}
+.filterboxcont{
+        display: flex;
+    border-radius: 5px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.filterbox {
+    width: 70%;
+    height: 5rem;
+    margin:2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+.filterbox p{
+    width: 40%;
+    color: #50D8D7;
+}
+.filterbox form{
+    width: 70%;
+    border: 1px solid #50D8D7;
+    height: 3.2rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.filterbox form select{
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 15px;
+    height: 100%;
+    border-radius: 10px;
+    color: #50D8D7;
+    font-weight: 900;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: none;
+}
+.filterbox form select option{
+    width: 100%;
+    padding: 10px 15px;
+    height: 100%;
+    color: #090539;
+    font-weight: 900;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    text-align: left;
+    position: absolute;
+    overflow-y: scroll;
+    bottom: 0;
+    cursor: pointer;
+}
+.currentfilter{
+    border: 1px solid white;
+    height: 5rem;
+}
+#def{
+    font-size: 0.9rem;
+    color: #ff0a3b;
+    font-weight: 900;
+    margin-bottom: 1%;
+}
+#def span{
+    font-size: 0.8rem;}
+
+@media screen and (max-width: 950px) {
+    header .middle h3{
+        font-size: 400%;
+    }
+    header .middle h5 {
+        color: #F3F3F3;
+        font-size: 120%;
+        font-weight: 800;
+    }
+}
+@media screen and (max-width:700px) {
+    .display .inner1{
+        width: 100%;
+        border: none;
+        border-radius: 0%;
+        border-bottom: 1.2px solid rgba(0, 0, 0, 0.209);
+    }
+    .display .inner2{
+        width: 100%;
+        height: 10rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .inner1 p{
+        font-size: 1.2rem;
+        margin-bottom: 3%;
+        font-weight: 900;
+    }
+    .inner1 p span{
+        font-size: 1rem;
+    }
+    .st{
+        font-size: 1.6rem;
+        margin-bottom: 5%;
+    }
+    .st span{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    .productlist_cont ul .pll{
+        width: 96%;
+    }
+    .filterbox {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .filterbox form{
+        width: 68%;
+        height: 3rem;
+    }
+    .filterbox form select{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .filterbox form select option{
+        font-size: 1.1rem;
+    }
+    header .middle h3{
+        font-size: 230%;
+    }
+    header .middle h5 {
+        color: #F3F3F3;
+        font-size: 80%;
+        font-weight: 900;
+    }
+    .showjobs ul li{
+        width: 98%;
+    }
+    .showmore button{
+        width: 54%;
+    }
+}
+@media screen and (max-width: 297px) {
+    .productlist_cont ul .pll{
+        width: 100%;
+    }
+    .filterbox {
+        font-size: 0.8rem;
+    }
+    .filterbox form{
+        width: 68%;
+        height: 2.9rem;
+    }
+    .filterbox form select{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .filterbox form select option{
+        font-size: 1rem;
+    }
+    header .middle h3{
+        font-size: 200%;
+    }
+    header .middle h5 {
+        color: #F3F3F3;
+        font-size: 80%;
+        font-weight: 900;
+    }
+}

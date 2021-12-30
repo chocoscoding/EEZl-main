@@ -1,0 +1,65 @@
+.dothings {
+    justify-content: center;
+    height: auto;
+}
+.viewp {width: 100%;}
+.viewpfunctioncont{
+    margin-bottom: 40px;
+    margin-top: 0.21%;
+    border: 1px solid #201e3d4d;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: large;
+}
+.viewpfunctioncont p span{
+    color: rgb(189, 20, 20);
+    font-style: italic;
+}
+#imageupload{
+    width: auto;
+    height: 3rem;
+    border: 1px solid black;
+    font-size: 1.8rem;
+    padding: 0.1%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.uploadimage{
+    margin:3% 0% 3% 0%;
+    border: 2px solid transparent;
+    width: 35%;
+    background-color: #090724;
+    border-radius: 11px;
+    color: #fff;
+    height: 3rem;
+    font-size: large;
+    cursor: pointer;
+}
+.uploadimage:hover{
+    border: 2px solid #9994d5;
+}
+@media (max-width:750px) {
+    #imageupload{
+        font-size: medium;
+    }
+    .viewpfunctioncont{
+        font-size: medium;
+    }
+}
+@media (max-width:430px) {
+    .uploadimage{
+        width: 60%;
+    }
+    #imageupload{
+        font-size:small;
+        width: 90%;
+    }
+    .viewpfunctioncont{
+        font-size: small;
+    }
+}

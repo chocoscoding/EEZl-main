@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectreview.css">
+    <link rel="stylesheet" href="projectreviewextra.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Project Review</title>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <div class="logo"><img src="ee.jpg" alt=""></div>
+        <div class="logo_name">Eezl Booster</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      
+      
+      <li >
+       <a href="eworker.html">
+         <i class='bx bx-home' ></i>
+         <span class="links_name">Home</span>
+       </a>
+       <span class="tooltip">Home</span>
+     </li>
+      <li >
+       <a href="bstrAccount.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Account</span>
+       </a>
+       <span class="tooltip">Account</span>
+     </li>
+     <li>
+        <a href="bstrdashboard.html" >
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+     <li>
+       <a href="bstrChat.html">
+         <i class='bx bx-message-detail' ></i>
+         <span class="links_name">Chat</span>
+       </a>
+       <span class="tooltip">Chat</span>
+     </li>
+     <li>
+       <a href="#"class="active">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Project Review</span>
+       </a>
+       <span class="tooltip">Project Review</span>
+     </li>
+     <li>
+         <a href="earnings.html">
+             <i class='bx bx-money' ></i>
+             <span class="links_name">Earnings</span>
+            </a>
+            <span class="tooltip">Earnings</span>
+        </li>
+        <li>
+            <a href="AccountsBought.html">
+           <i class='bx bx-cart' ></i>
+           <span class="links_name">Accounts Bought</span>
+       </a>
+       <span class="tooltip">Accounts Bought</span>
+   </li>
+     <li class="profile">
+      <p style="color: white;line-height: 2.4;">LOGOUT</p>
+         <i class='bx bx-log-out' id="logout" onclick="logOut()"></i>
+     </li>
+    </ul>
+  </div>
+      <section class="main-section" id="mains">
+        <div class="text">Project Review</div>
+        <div class="text-2">Status: <span>Online </span></div>
+      <main>
+        <div class="processshow">
+          <div class="showsucess">
+            <div id="showinfo1"></div>
+            <div id="showinfo2">Successful, The changes would take effect soon...</div>
+            <div id="showinfo3"><i class='bx bxs-x-circle' id="closeshow"></i></div>
+          </div>
+          <div class="showerror">
+            <div id="showinfo1"></div>
+            <div id="showinfo2" id="errm">An error occured, try again</div>
+            <div id="showinfo3"><i class='bx bxs-x-circle' id="closeshow"></i></div>
+          </div>
+          <div class="showloading">
+            <div id="showinfo1"></div>
+            <div id="showinfo2">Loading... Kindly don't refresh your browser</div>
+            <div id="showinfo3"><i class='bx bxs-x-circle' id="closeshow"></i></div>
+          </div> 
+        </div>
+
+          <div class="display-info">
+            <div class="chart-data">
+              <h4>Statistics</h4>
+                  <div class="rank-timeline">
+                    <p>You are <span id="percentageno">0</span>% done</p>
+                    <br>
+                    <div class="line-update-cont">
+                      <div class="line-update">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="timeline">
+                  <h4>
+                      Project Progress
+                  </h4>
+                  <div class="rank-text"><p>Initial</p> <h4 id="startRank">No current Project</h4> <p>Current Progress</p> <h4 id="currentRank">No current Project</h4> <p>Desired </p> <h4 id="endRank">No current Project</h4></div>
+              </div>
+              <div class="your-sentiment">
+                <h4>Customers Sentiment</h4>
+                <div class="moodbox">
+                    
+                    <div class="sentimage">
+                      <img src="senti10.png" id="sentimagechange" alt="sentiimage" >
+                    </div>
+                    <p class="sentitext"></p>
+                    <p class="sentipercent"></p>
+                </div>
+              
+          </div>
+          <div class="dothings">
+              <div class="viewp">
+                  <div class="view-media">
+                    <table style="width:100%">
+                    <tr>
+                        <th>Day Sent</th>
+                        <th>Media File</th>
+                        <th>Open File</th>
+                    </tr>
+                    </table>
+                  </div>
+              </div>
+              <div class="viewpfunctioncont">
+                <p>Upload Image here: <span>*Image files shouldn't be more tha 4mb*</span> </p> <input type="file" name="imageupload" id="imageupload"> 
+                <button class="uploadimage">Upload</button>
+              </div>
+          </div>
+      </main>
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>      
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+      <script src="bstrprojectreview.js"></script>
+      <script src="Verticalnav.js"></script>
+</body>
+</html>

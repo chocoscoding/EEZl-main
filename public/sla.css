@@ -1,0 +1,529 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'NirmalaUI-Bold' , Nirmala UI; 
+    background-color: #090539;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+  
+
+body > main > div.loading > h3:nth-child(1){
+    display: none;
+}
+header{
+    width: 100%;
+    height: 20rem;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    background-position: center;
+background: linear-gradient(0deg,  rgba(15, 13, 49, 0.794) 5%,rgba(15, 13, 49, 0.793) 90%), url('sla.png');
+}
+header .main-text{
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    margin: auto;
+    border: 1px solid transparent;
+    margin-top: 11%;
+    text-align: center;
+    font-size: 50px;
+    color: #ff0a3b;
+    font-weight: 700;
+}
+header .main-text2{
+    width: 100%;
+    height: 2rem;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid transparent;
+    text-align: center;
+    font-size: 20px;
+    color: #f5f5f5;
+
+}
+main{
+    position: relative;
+}
+.loading{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    background-color: #d0d0d0;
+    display:none;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.loading h3{
+    font-size: 8rem;
+    color: #090539;
+}
+.dot1{
+    border: 1.5px solid #090539;
+    background-color: #090539;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    animation: bounce1 0.8s infinite alternate;
+}
+.dot2{
+    border: 1.5px solid #090539;
+    background-color: #090539;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    animation: bounce2 0.8s infinite alternate;
+    animation-delay: 0.4s;
+}
+.dot3{
+    border: 1.5px solid #090539;
+    background-color: #090539;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    animation: bounce3 0.8s infinite alternate;
+    animation-delay: 0.8s;
+}
+@keyframes bounce1 { 0% { transform: translateY(0); opacity: 90%; } 100% { transform: translateY(-80px); } }
+@keyframes bounce2 { 0% { transform: translateY(0); opacity: 70%; } 100% { transform: translateY(-70px); } }
+@keyframes bounce3 { 0% { transform: translateY(0); opacity: 50%; } 100% { transform: translateY(-50px); } }
+main h2{
+    color: #f5f5ff;
+    text-align: center;
+    margin-bottom: 4%;
+}
+.fillform{
+    position: relative;
+    margin: 1%;
+}
+.formstyling{
+    width: 58%;
+    padding:2%;
+    margin: auto;
+    background-color: #2f29793a;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 20px;
+    color: #50D8D7;
+    box-shadow: 0px 0px 10px #ffffff12;
+}
+#accountdata{
+    display: block;
+}
+#confirminfo{
+    display: none;
+}
+.formstyling button{
+    display: block;
+    height: 2.3rem;
+    width: 60%;
+    margin-left: 20%;
+    font-weight: bolder;
+    font-size: larger;
+    color: #090539;
+    background-color: #50D8D7;
+    border: 1px solid #50D8D7;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s all ease;
+    margin-bottom: 2%;
+}
+#submitall{
+    border: 2px solid #50D8D7;
+    color: #50D8D7;
+    background-color: transparent;
+}
+#submitall:hover{
+    color: #090539;
+    background-color: #50D8D7;
+    border: 1px solid #50D8D7;
+}
+.formstyling button:hover{
+    border: 2px solid #50D8D7;
+    color: #50D8D7;
+    background-color: transparent;
+}
+.ic{
+    height: 4rem;
+    margin-bottom: 2%;
+    position: relative;
+}
+.ic2{
+    margin-bottom: 2%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 90%;
+}
+.lw{
+    color: #ee1818;
+    font-weight: 800;
+}
+#checkinfo{
+    flex-direction: column;
+    display: flex;
+    font-size: large;
+    font-weight: bolder;
+    color: #57ebebe2;
+    align-items: flex-start;   
+    margin-bottom: 5%; 
+    margin-top: 3%; 
+    border-bottom:2px solid #bffafa9a;
+    border-top:2px solid #bffafa9a;
+    width: 100%;
+}
+#checkinfo span{
+    font-weight: 300;
+    font-size: medium;
+    color: #bffafa;
+    margin-left: 3px;
+}
+#return{
+    color: rgb(21, 114, 21);
+}
+.ic input{
+    border:2px solid #50d8d838;
+    background-color: transparent;
+    width: 100%;
+    height: 80%;
+    color: #f5f5ff;
+    transition: .3s ease all;
+    border-radius: 5px;
+    padding: 1%;
+}
+.errorshown{
+    border: 2px solid #ee1818 !important;
+}
+
+.ic span{
+    color: #50d8d843;
+    position: absolute;
+    top: 8%;
+    left: 1%;
+    font-size: 1.8rem;
+    transition: .3s ease all;
+    z-index: -1;
+}
+input:not(:placeholder-shown) + span{
+    z-index: 1;
+    background-color: #120d48;
+    color: #50D8D7;
+    top: -20%;
+    left: 2%;
+    font-size: 1rem;
+}
+input:not(:placeholder-shown){
+    border:2px solid #4ddddde3;
+    font-size: large;
+    padding: 1%;
+}
+@media screen and (max-width: 1002px) and (min-width: 882px) {
+    header{
+        width: 100%;
+        height: 22rem;
+        margin-top: 10px;
+        border: 1px solid transparent;
+    }
+    header .main-text2{
+        margin-top: 10%;
+        height: 2rem;
+        border: 1px solid transparent;
+    }
+
+}
+@media screen and (max-width:882px){
+    header{
+        width: 100%;
+        height: 21rem;
+        margin-top: 10px;
+        border: 1px solid transparent;
+    }
+    header .main-text2{
+        margin-top: 10%;
+        height: 2rem;
+        border: 1px solid transparent;
+    }
+
+
+
+}
+@media screen and (max-width:768px) {
+    header{
+        width: 100%;
+        height: 19rem;
+        margin-top: 10px;
+        border: 1px solid transparent;
+    }
+    header .main-text2{
+        margin-top: 10%;
+        height: 2rem;
+        border: 1px solid transparent;
+    }
+    .formstyling{
+        width: 68%;
+    }
+    .loading h3{
+        font-size:6rem;
+        color: #090539;
+    }
+    .dot1{
+        height: 1.52rem;
+        width: 1.52rem;
+    }
+    .dot2{
+        height: 1.52rem;
+        width: 1.52rem;
+    }
+    .dot3{
+        height: 1.52rem;
+        width: 1.52rem;
+    }
+}
+
+@media screen and (max-width:666px) {
+    
+    header{
+        width: 100%;
+        height: 18rem;
+        margin-top: 10px;
+        border: 1px solid transparent;
+    }
+    header .main-text2{
+        margin-top: 10%;
+        height: 2rem;
+        border: 1px solid transparent;
+    }
+    header .to-act .toact{
+        transition: all 0.2s ease;
+        width: 33%;
+        background-color: #f5f5f5;
+        text-align: center;
+        border-radius: 13px;
+        border: 2.4px solid #f5f5ff;
+        height: 4rem;
+        font-size: 16px;
+        color: #090539;
+        font-weight: 600;
+        overflow: hidden;
+        cursor: pointer;
+        margin-left: 14%;
+    }
+    header .to-act .toact2{
+        transition: all 0.2s ease;
+        width: 33%;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 13px;
+        border: 2.4px solid #ff0a3b;
+        height: 4rem;
+        font-size: 16px;
+        color: #f5f5f5;
+        font-weight: 600;
+        cursor: pointer;
+        
+    }
+    .formstyling{
+        width: 78%;
+    }
+
+}
+@media screen and (max-width:466px) {
+
+    header{
+        width: 100%;
+        height: 14rem;
+        margin-top: 10px;
+        border: 1px solid transparent;
+    }
+    header .main-text2{
+        margin-top: 10%;
+        height: 2rem;
+        border: 1px solid transparent;
+    }
+    header .to-act .toact{
+        transition: all 0.2s ease;
+        width: 33%;
+        background-color: #f5f5f5;
+        text-align: center;
+        border-radius: 13px;
+        border: 2.4px solid #f5f5ff;
+        height: 4rem;
+        font-size: 16px;
+        color: #090539;
+        font-weight: 600;
+        overflow: hidden;
+        cursor: pointer;
+        margin-left: 14%;
+    }
+    header .to-act .toact2{
+        transition: all 0.2s ease;
+        width: 33%;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 13px;
+        border: 2.4px solid #ff0a3b;
+        height: 4rem;
+        font-size: 16px;
+        color: #f5f5f5;
+        font-weight: 600;
+        cursor: pointer;  
+    }
+    .formstyling{
+        width: 88%;
+    }
+    .ic{
+        height: 3.6rem;
+    }
+    .ic span{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:529px){
+
+
+    header .main-text{
+        font-size: 29px;
+    }
+    header{
+        width: 100%;
+        height: 19rem;
+        margin-top: 10px;
+        border: 1px solid transparent;
+    }
+    header .main-text2{
+        margin-top: 10%;
+        height: 2rem;
+        font-size: 15px;
+        border: 1px solid transparent;
+    }
+    .loading h3{
+        font-size:4rem;
+        color: #090539;
+    }
+    .dot1{
+        height: 1.22rem;
+        width: 1.22rem;
+    }
+    .dot2{
+        height: 1.22rem;
+        width: 1.22rem;
+    }
+    .dot3{
+        height: 1.22rem;
+        width: 1.22rem;
+    }
+
+}
+@media screen and (max-width:424px){
+    header{
+        width: 100%;
+        height: 13rem;
+        margin-top: 10px;
+        border: 1px solid transparent;
+    }
+    header .main-text{
+        font-size: 29px;
+    }
+    header .main-text2{
+        margin-top: 10%;
+        height: 2rem;
+        font-size: 15px;
+        border: 1px solid transparent;
+    }
+    .formstyling{
+        width: 90%;
+    }
+    .ic{
+        height: 3.4rem;
+    }
+    .ic span{
+        font-size: 1.6rem;
+    }
+
+}
+@media screen and (max-width:374px){
+    .boostingr h2{
+        color: #f5f5f5;
+        font-size: 24px;
+    }
+
+    header{
+        width: 100%;
+        height: 13rem;
+        margin-top: 10px;
+        border: 1px solid transparent;
+    }
+    header .main-text{
+        font-size: 29px;
+    }
+    header .main-text2{
+        margin-top: 10%;
+        height: 2rem;
+        font-size: 15px;
+        border: 1px solid transparent;
+    }
+
+}
+@media screen and (max-width:320px) {
+    .boostingr h2{
+        color: #f5f5f5;
+        font-size: 24px;
+    }
+
+    header{
+        width: 100%;
+        height: 13rem;
+        margin-top: 10px;
+        border: 1px solid transparent;
+    }
+    header .main-text{
+        font-size: 25px;
+    }
+    header .main-text2{
+        margin-top: 10%;
+        height: 2rem;
+        font-size: 12px;
+        border: 1px solid transparent;
+    }
+    .formstyling{
+        width: 98%;
+    }
+    .ic{
+        height: 3.2rem;
+    }
+    .ic span{
+        font-size: 1.4rem;
+    }
+    .loading h3{
+        font-size:3rem;
+        color: #090539;
+    }
+    .dot1{
+        height: 1rem;
+        width: 1rem;
+    }
+    .dot2{
+        height: 1rem;
+        width: 1rem;
+    }
+    .dot3{
+        height: 1rem;
+        width: 1rem;
+    }
+
+} 

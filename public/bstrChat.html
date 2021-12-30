@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="viewextra.css">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+          <div class="logo"><img src="ee.jpg" alt=""></div>
+            <div class="logo_name">Eezl</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          
+          
+          <li >
+           <a href="eworker.html">
+             <i class='bx bx-home' ></i>
+             <span class="links_name">Home</span>
+           </a>
+           <span class="tooltip">Home</span>
+         </li>
+          <li >
+           <a href="bstrAccount.html">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Account</span>
+           </a>
+           <span class="tooltip">Account</span>
+         </li>
+         <li>
+            <a href="bstrdashboard.html" >
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+             <span class="tooltip">Dashboard</span>
+          </li>
+         <li>
+           <a href="#" class="active">
+             <i class='bx bx-message-detail' ></i>
+             <span class="links_name">Chat</span>
+           </a>
+           <span class="tooltip">Chat</span>
+         </li>
+         <li>
+           <a href="bstrprojectreview.html">
+             <i class='bx bx-pie-chart-alt-2' ></i>
+             <span class="links_name">Project Review</span>
+           </a>
+           <span class="tooltip">Project Review</span>
+         </li>
+         <li>
+          <a href="AccountsBought.html">
+            <i class='bx bx-cart' ></i>
+            <span class="links_name">Accounts Bought</span>
+          </a>
+          <span class="tooltip">Accounts Bought</span>
+        </li>
+         <li class="profile">
+          <p style="color: white;line-height: 2.4;">LOGOUT</p>
+             <i class='bx bx-log-out' id="logout" onclick="logOut()"></i>
+         </li>
+        </ul>
+      </div>
+      <section class="main-section">
+        <div class="text">Chat</div>
+        <div class="text-2">Status: <span>Online </span></div>
+      <main>
+        <div id="chat">    
+          <div class="chat-title">
+            <div class="profileimage" id="your-image">
+              <img src="ee.jpg" alt="">
+            </div>
+            <h1 id="user">User</h1>
+          </div>
+          <div class="messages">
+            <div class="messages-content">
+              <ul id="msgcul">
+                <p id="nod" style="text-align: center; font-size: 4rem; color: #50d8d895; font-weight: 900; font-style: italic;">No data</p>
+               </ul>
+            </div>
+          </div>
+          <div class="message-box">
+            
+            <input type="text" class="message-input" name="messagetext" id="messaget" placeholder="Type message...">
+            <button type="submit" class="message-submit" onclick="run()"><i class='bx bxs-send'></i></button>
+            </div>    
+        </div>  
+      </main>
+      </section>
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+      <script src="Verticalnav.js"></script>
+      <script src="bstrchat.js"></script>
+</body>
+</html>

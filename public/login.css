@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family:'NirmalaUI-Bold' , Nirmala UI; 
+    background-color: #090539;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.otp{
+    width: 100%;
+    height: 51rem;
+    border: 1px solid transparent;
+    background-color: #3d3a3a24;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    backdrop-filter: blur( 11.0px );
+    -webkit-backdrop-filter: blur( 11.0px );
+  
+  }
+  .otp .inner{
+    position: relative;
+    width: 67%;
+    height: 60%;
+    margin: auto;
+    border-radius: 19px;
+    background-color: #ffffffef;
+    text-align: center;
+  }
+  .otp .inner h2{
+    color: #090539;
+    font-size: 50px;
+  }
+  .otp .inner p{
+    color: #090539;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .otp .inner .space{
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+  .otp .inner .space i{
+    text-align: center;
+    color: #ff0a3b;
+    font-size: 170px;
+    width: inherit;
+  }
+  .ema{
+    width: 70%;
+    height: 4rem;
+    border: 1.5px solid transparent;
+    border-radius: 20px;
+    color: #f5f5f5;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top:3%;
+    background-color: #090539;
+  }
+  .ema:hover{
+    border: 2.5px solid #ff0a3b;
+    color: #ff0a3b;
+    font-size: 18px;
+  }
+
+
+.alert1{
+    position: relative;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 3.4rem;
+    background-color: #c0f5c0db;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 3rem;
+    display: none;
+    font-weight: 800;
+    color: rgb(9, 62, 9);
+
+}
+.alert4{
+    position: relative;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    padding:10px 0px ;
+    background-color: #ff7777db;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 3rem;
+    display: none;
+    font-weight: 800;
+    color: rgb(99, 16, 16);
+
+}
+.main{
+    height: 30rem;
+    width: 100%;
+    border: 1px solid transparent;
+    background-color:#090539; 
+    align-content: center;
+
+}
+.signup-form{
+    background: rgba( 9, 5, 57, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba(64, 66, 109, 0.514);
+    backdrop-filter: blur( 11.0px );
+-webkit-backdrop-filter: blur( 11.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 43%;
+    transition: all 0.2s ease;
+    margin-top: 5%;
+    margin-left: 4%;
+    height: 30rem;
+}
+.backdrop-image{
+    height: 35rem;
+    border: 1px solid transparent;
+    width: 80%;
+    position: absolute;
+    top: 10;
+    overflow: hidden;
+    right: 0;
+    margin-top: 10%;
+
+}
+.backdrop-image img{
+    height: auto;
+    width: 105%;
+    float: right;
+    
+}
+.signup-form h1{
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 35px;
+}
+.signup-form p{
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 19px;
+    font-weight: 100;
+}
+.signup-form p a{
+    text-decoration: none;
+    color: #50d8d7;
+}
+.sign-up-form-inner{
+   border: 1px solid transparent;
+    width: 100%;
+    height: 14rem;
+}
+.part{
+    border: 1px solid transparent;
+    width: 100%;
+    
+    justify-content: space-between;
+    margin-top: 3%;
+
+    height: 90px;
+}
+.part-inner{
+    border: 1px solid transparent;
+    width: 90%;
+    height: fit-content;
+    margin:10px;
+    align-self: center;
+    
+}
+
+ .part-inner label{
+    font-size: 20px;
+    font-weight: 100;
+    color: #50d8d7;
+    padding-left: 3%;
+}
+
+  input[type=password] {
+    width: 100%;
+    height: 43px;
+    display: inline-block;
+    background: rgba(93, 91, 119, 0.15);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 16.5px );
+-webkit-backdrop-filter: blur( 16.5px );
+    border: 1px solid #50D8D7;
+    border-radius: 9.5px;
+    color: #f5f5f5;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  input[type=email] {
+    width: 100%;
+    height: 43px;
+    margin: 5px 0 12px 0;
+    display: inline-block;
+    background: rgba(93, 91, 119, 0.15);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 16.5px );
+-webkit-backdrop-filter: blur( 16.5px );
+    border: 1px solid #50D8D7;
+    border-radius: 9.5px;
+    color: #f5f5f5;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+
+
+.submit-container{
+    color:#50d8d7;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    line-height: 35px;
+
+}
+  .submit{
+      width: 40%;
+      position: absolute;
+      height: 40px;
+      background-color: #50D8D7;
+      color: #090539;
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.26s ease;
+      border-radius: 15px;
+      border: 1px solid transparent;
+      transform: translateX(75%);
+      left: 0;
+  }
+  .submit:hover{
+      color: #50D8D7;
+      font-size: 32px;
+      border: 1px solid #50d8d7;
+      background-color: #090539;
+  }
+  .forgot-password {
+    text-decoration: none;
+    color: #50d8d7;
+    text-align: center;
+}
+@media screen and (max-width:940px) {
+    .signup-form{
+        width: 46%;
+    }
+}
+@media screen and (max-width:740px) {
+    .signup-form{
+        width: 66%;
+    }
+    .backdrop-image{
+        opacity: 50%;
+        width: 90%;
+    }
+    .backdrop-image img{
+        height: 100%;
+        width: auto;
+    }
+}
+@media screen and (max-width:540px) {
+    .signup-form{
+        width: 89%;
+    }
+    .backdrop-image{
+        opacity: 50%;
+        width: 90%;
+    }
+    .backdrop-image img{
+        height: 100%;
+        width: auto;
+    }
+}
+@media screen and (max-width:340px) {
+    .signup-form{
+        width: 97%;
+    }
+    .backdrop-image{
+        opacity: 50%;
+        width: 90%;
+    }
+    .backdrop-image img{
+        height: 100%;
+        width: auto;
+    }
+}

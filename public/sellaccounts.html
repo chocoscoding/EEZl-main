@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6526390f69.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="nandf2.css">
+    <link rel="stylesheet" href="sla.css">
+    <title>Sell Accounts</title>
+</head>
+<body>
+  <nav>
+    <div class="logo-container">
+    <div class="logo"><img src="ee.jpg" alt=""></div>
+    <div class="logo-text"></div>
+    </div>
+    <div class="open" onclick="opennav()"><i class="fas fa-bars"></i></div>
+    <div class="side">
+        <div class="close" onclick="closenav()"><i class="fas fa-times"></i></div>
+    <ul id="nav1">
+        <li ><a href="eworker.html" >E-Worker</a> </li>
+       <li> <a href="sellaccounts.html" class="active-page-link" >Sell Accounts</a> </li>
+        <li><a href="boosting_jobs.html">Boosting Jobs</a> </li>
+        
+    </ul>
+    <ul class="account">
+   <li class="login" onclick="window.location.href = 'boosterlogin.html'">Login</li>
+    </ul>
+    <div onclick="window.location.href='Account.html'" class="dashboard">
+        <i class="fas fa-user-circle"></i>&nbsp;Account
+    </div>
+</div>
+</nav>
+    <header>
+        <div class="main-text" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+             Sell Lol Accounts Easily
+        </div>
+        <div class="main-text2" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="700">
+            We have customers waiting to buy unique and good accounts like the one you have.
+       </div>
+    </header>
+
+    <main>
+        <div class="loading">
+            <h3>Done, <span id="return">click  here</span> to return  </h3><h3>Loading  </h3> <div class="dot1"></div><div class="dot2"></div><div class="dot3"></div> 
+        </div>
+        <div class="fillform">
+            <form action="" id="accountdata" class="formstyling">
+                <h2>Post an Account for Sale Now!!!</h2>
+                <!-- <h4 class="errormessage">Make sure that you complete all info</h4> -->
+                <div class="ic">
+                    <input type="email" id="s_email" placeholder=" " class="l" required>
+                    <span for="">Account Mail</span>
+                </div>
+                <div class="ic">
+                    <input type="text" id="s_accountpswd" placeholder=" " class="l" required>
+                    <span for="">Account Password</span>
+                </div>
+                <div class="ic">
+                    <input type="text" id="s_accountusrn" placeholder=" " class="l" required>
+                    <span for="">Account Username</span>
+                </div>
+                <div class="ic">
+                    <input type="text" id="s_rank" placeholder=" " class="l" required>
+                    <span for="">Rank</span>
+                </div>
+                <div class="ic">
+                    <input type="text" id="s_division" placeholder=" " class="l" required>
+                    <span for="">Division</span>
+                </div>
+                <div class="ic">
+                    <input type="text" id="s_mark" placeholder=" " class="l" required>
+                    <span for="">Mark</span>
+                </div>
+                <div class="ic">
+                    <input type="number" id="s_matcheswon" placeholder=" " class="l" required>
+                    <span for="">Matches Won</span>
+                </div>
+                <div class="ic">
+                    <input type="number" id="s_skins" placeholder=" " class="l" required>
+                    <span for="">Skins</span>
+                </div>
+                <div class="ic">
+                    <input type="number" id="s_champions" placeholder=" " class="l" required>
+                    <span for="">Champions</span>
+                </div>
+                <div class="ic">
+                    <input type="number" id="s_minbid" placeholder=" " class="l" required >
+                    <span for="">Price(USD)</span>
+                </div>
+                <h2> 3 IN-GAME images to show proof of ownership</h2>
+                <div class="ic">
+                    <input type="file" accept="image/*" id="s_ai1" placeholder=" " class="l" required>
+                </div>
+                <div class="ic">
+                    <input type="file" accept="image/*" id="s_ai2" placeholder=" " class="l" required>
+                </div>
+                <div class="ic">
+                    <input type="file" accept="image/*" id="s_ai3" placeholder=" " class="l" required>
+                </div>
+                <button id="shownext">Next</button>
+            </form>
+            <div class="formstyling" id="confirminfo">
+                <h3>Kindly read the following carefully</h3>
+                <div class="ic2" id="checkinfo">
+                    <p>Account Mail : <span id="checkinfo1">edec</span></p>
+                    <p>Account Password : <span id="checkinfo2">edec</span></p>
+                    <p>Account Username : <span id="checkinfo3">edec</span></p>
+                    <p>Rank : <span id="checkinfo4">edec</span></p>
+                    <p>Division : <span id="checkinfo5">edec</span></p>
+                    <p>Mark : <span id="checkinfo6">edec</span></p>
+                    <p>Matches Won : <span id="checkinfo7">edec</span></p>
+                    <p>Skins : <span id="checkinfo9">edec</span></p>
+                    <p>Champions : <span id="checkinfo10">edec</span></p>
+                    <p>Lowest Bid Price :<span id="checkinfo8">edec</span></p>
+                </div>
+                <div class="ic2">
+                    <input type="checkbox" name="agreeto" id="checkbox1" required>
+                    <span>I confirm that all the information above are correct</span>
+                </div>
+                <div class="ic2">
+                    <input type="checkbox" name="agreeto" id="checkbox1" required>
+                    <span>I authorize Eezl to take examin my account</span>
+                </div>
+                <div class="ic2">
+                    <input type="checkbox" name="agreeto" id="checkbox1" required>
+                    <span>I agree that all right and permission would be transferred to anyone who buys this account through Eezl</span>
+                </div>
+                <div class="ic2">
+                    <span class="lw">If any fraudulent or suspicious activity is detected, Your post request won't be accepted.</span>
+                </div>
+                <button id="shownext2">Back</button>
+                <button id="submitall">Submit</button>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <footer>
+      <div class="footer_cont"> 
+      <div class="ftrcontainer ftritem1">
+          <i>Do you want to get the best deals and latest info that will benefit you? Then subscribe to our newsletter. <br> We don't send more than 1 mail a week👌</i> <br>
+          <input type="email" name="newsletter" id="newsletter" placeholder='example@email.com'> <br>
+          <button id="submitn">Submit</button>
+      </div>
+      <div class="ftrcontainer ftritem2">
+          <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="AccountMarket.html">Account Market</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="eworker.html">For Workers</a></li>
+          </ol>
+      </div>
+      <div class="ftrcontainer ftritem2">
+          <ol>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Instagram</a></li>
+          </ol>
+      </div></div>
+  </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>    
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+    <script src="sla.js"></script>
+</body>
+
+</html>

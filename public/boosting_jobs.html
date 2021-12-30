@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6526390f69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="nandf2.css">
+    <link rel="stylesheet" href="bj.css">
+    <title>Boosting Jobs</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+        <div class="logo"><img src="ee.jpg" alt=""></div>
+        <div class="logo-text"></div>
+        </div>
+        <div class="open" onclick="opennav()"><i class="fas fa-bars"></i></div>
+        <div class="side">
+            <div class="close" onclick="closenav()"><i class="fas fa-times"></i></div>
+        <ul id="nav1">
+            <li ><a href="eworker.html" >E-Worker</a> </li>
+           <li> <a href="sellaccounts.html" >Sell Accounts</a> </li>
+            <li><a href="boosting_jobs.html" class="active-page-link" >Boosting Jobs</a> </li>
+
+        </ul>
+        <ul class="account">
+       <li class="login" onclick="window.location.href = 'boosterlogin.html'">Login</li>
+        </ul>
+        <div onclick="window.location.href='bstrAccount.html'" class="dashboard">
+            <i class="fas fa-user-circle"></i>&nbsp;Account
+        </div>
+    </div>
+    </nav>
+    <div class="filter">
+        <h2 style="text-align: center;">SORT BY: </h2>
+        <div class="filterboxcont">
+            <div class="filterbox">
+                <p>Desired Rank:</p>
+                <form action="">
+                    <select name="Rank" title="rankfilter" id="rankfilter">
+                        <option value="All">All</option>
+                        <option value="Iron">Iron</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                        <option value="Emerald">Emerald</option>
+                        <option value="Diamond">Diamond</option>
+                        <option value="Master">Master</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="showjobs">
+        <div class="moreinfo">
+            <div class="closebox">
+               <button onclick="mi()"><i class="fas fa-times"></i></button> 
+            </div>
+            <div class="display">
+                <div class="inner1">
+                   <h2 class="st"> Service Type - <span id="stype"><span class="ldin">Loading...</span> </span></h2>
+                   <p>  Current Rank - <span id="crank"><span class="ldin">Loading...</span> </span></p> 
+                   <p>  Current Mark - <span id="cmark"><span class="ldin">Loading...</span> </span></p> 
+                   <p>  Current Division - <span id="cdivision"><span class="ldin">Loading...</span> </span></p> 
+                   <p>  Desired Rank - <span id="drank"><span class="ldin">Loading...</span> </span></p> 
+                   <p>  Desired Division - <span id="ddivision"><span class="ldin">Loading...</span> </span></p> 
+                   <p>  Device - <span id="device"><span class="ldin">Loading...</span> </span></p> 
+                   <p>  Desired Location - <span id="dlocation"><span class="ldin">Loading...</span> </span></p> 
+                   <p>  Add-ons - <span id="addons"><span class="ldin">Loading...</span> </span></p> 
+                   <p>  Duration - <span id="duration"><span class="ldin">Loading...</span> </span></p> 
+                   <p>  Your Pay - <span id="ypay"><span class="ldin">Loading...</span> </span></p> 
+                   <p id="def">  Play With Booster - <span>You will log in with your personal account and play with the client</span></p> 
+                   <p id="def">  With Sreaming - <span>You will stream your boosting matches with twitch</span></p> 
+                   <p id="def">  +1 Win in Desired Rank - <span>Give the client one additional win in their new level/rank</span></p> 
+                </div>
+                <div class="inner2">
+                    <button id="aj">Accept Job</button>
+                    <div class="agreebox">
+                        By clicking the <b>Accept Job</b> button, you agree to all our T&C and to every of this current job's conditions.
+                    </div>
+                </div>
+                <div class="inner3">
+                    <span id="ldinloadert" class="ldin">Connecting With Database...</span>
+                </div>
+            </div>
+            
+        </div>
+        <ul id="plist">
+        </ul>
+    </div>
+    <div class="showmore">
+        <button>Show More</button>
+    </div>
+    
+    <footer>
+        <div class="footer_cont"> 
+        <div class="ftrcontainer ftritem1">
+            <i>Do you want to get the best deals and latest info that will benefit you? Then subscribe to our newsletter. <br> We don't send more than 1 mail a week👌</i> <br>
+            <input type="email" name="newsletter" id="newsletter" placeholder='example@email.com'> <br>
+            <button id="submitn">Submit</button>
+        </div>
+        <div class="ftrcontainer ftritem2">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="AccountMarket.html">Account Market</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="eworker.html">For Workers</a></li>
+            </ol>
+        </div>
+        <div class="ftrcontainer ftritem2">
+            <ol>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ol>
+        </div></div>
+    </footer>
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+  <script src="bj.js"></script>
+</body>
+</html>

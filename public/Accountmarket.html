@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" sizes="48x48" href="icon_48x48.png" />
+    <link rel="icon" type="image/png" sizes="72x72" href="icon_72x72.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="icon_96x96.png" />
+    <link rel="icon" type="image/png" sizes="168x168" href="icon_168x168.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icon_192x192.png" />
+    <link rel="icon" type="image/png" sizes="602x602" href="icon_602x602.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="192x180" href="apple-touch-icon.png" />
+    <meta name="theme-color" content="#f5f5f5"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nandf.css">
+    <link rel="stylesheet" href="accountmarket.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Account Market</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+        <div class="logo"><img src="ee.jpg" alt=""></div>
+        <div class="logo-text"></div>
+        </div>
+        <div class="open" onclick="opennav()"><i class="fas fa-bars"></i></div>
+        <div class="side">
+            <div class="close" onclick="closenav()"><i class="fas fa-times"></i></div>
+        <ul id="nav1">
+            <li ><a href="index.html">Home</a> </li>
+           <li> <a href="services.html">Services</a> </li>
+            <li><a href="Accountmarket.html"class="active-page-link">Market</a> </li>
+            <li><a href="">Contact</a> </li>
+        </ul>
+        <ul class="account">
+       <li class="login" onclick="window.location.href = 'login.html'">Login</li>
+        <li class="signup" onclick="window.location.href = 'signup.html'">SignUp</li>
+        </ul>
+        <div onclick="window.location.href='Account.html'" class="dashboard">
+            <i class="fas fa-user-circle"></i>&nbsp;Account
+        </div>
+    </div>
+    </nav>
+    <header>
+            <div class="middle">
+                <h3>Get Any account, Anytime, Anyday</h3>
+                <h5>Don't buy fake accounts or involve in any shady trade. Buy accounts safely and easily with us</h5>
+            </div>
+    </header>
+    <!-- <h3>Buy Now</h3> -->
+    <main>
+    <div class="filter">
+        <h2 style="text-align: center; color: #F3F3F3;">SORT BY: </h2>
+        <div class="filterboxcont">
+            <div class="filterbox">
+                <p>Rank:</p>
+                <form action="">
+                    <select name="Rank" title="rankfilter" id="rankfilter">
+                        <option value="All">All</option>
+                        <option value="Iron">Iron</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                        <option value="Emerald">Emerald</option>
+                        <option value="Diamond">Diamond</option>
+                        <option value="Master">Master</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="productlist_cont">
+        <ul id="no1">
+         </ul>
+
+    </div>
+    <div class="pagination">
+        <button class="pagi" onclick="showmore()">SHOW MORE</button>
+    </div>
+    </main>
+    <div class="gtact">
+        <div class="gtactclose">
+            <button class="closegtact"> <i class="fas fa-times"></i></button>
+        </div>
+        <div class="gtactflex">
+        <div class="textinfo">
+            <h3>Account Info</h3>
+            <br>
+            <h4>Rank: <span id="rank">bcsajbka</span></h4>
+            <h4>Division: <span id="division">bcsajbka</span></h4>
+            <h4>Mark: <span id="mark">bcsajbka</span></h4>
+            <h4>Matches Won: <span id="matcheswon">bcsajbka</span></h4>
+            <h4>Region: <span id="region">bcsajbka</span></h4>
+            <h4>Skin: <span id="skin">bcsajbka</span></h4>
+            <h4>Champions: <span id="champions">bcsajbka</span></h4>
+            <h4>Price: <span id="price">bcsajbka</span></h4>
+        </div>
+        <div class="imagecont">
+            <div class="imageshow">
+                <img id="imageshown" src="XayahRakan.jpg" alt="">
+            </div>
+            <div class="tesx">
+            <div class="imageclickcont">
+                <div class="imageclick imagecactive" id="pic1"> <img class="tinyboys" src="XayahRakan.jpg" alt=""> </div>
+                <div class="imageclick" id="pic2"> <img class="tinyboys" src="Bewitching.jpg" alt=""> </div>
+                <div class="imageclick" id="pic3"> <img class="tinyboys" src="XayahRakan.jpg" alt=""> </div>
+            </div>
+            </div>
+        </div>
+    </div>
+        <div class="lastcont">
+            <p style="color: red;font-weight: 900; text-align: center;">For account safety and security purposes, <br> (Vital info such as username and password would be added 30 minutes after a successful purchase.)</p>
+            <button class="buyaccount">BUY NOW</button>
+        </div>
+        <div class="payment">
+            <div class="closesect"> CLOSE</div>
+            <div class="paydiv">
+                <div id="paypal-btn-container"></div>
+            </div>
+            <p class="confirm">Your payment has been processed. Click <span id="here" onclick="window.location.href = 'AccountsBought.html'">here</span> to see account bought.</p>
+            <p class="confirmerror" style="color: red;">Your payment has been processed. Click  to see account bought.</p>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="footer_cont"> 
+        <div class="ftrcontainer ftritem1">
+            <i>Do you want to get the best deals and latest info that will benefit you? Then subscribe to our newsletter. <br> We don't send more than 1 mail a week👌</i> <br>
+            <input type="email" name="newsletter" id="newsletter" placeholder='example@email.com'> <br>
+            <button id="submitn">Submit</button>
+        </div>
+        <div class="ftrcontainer ftritem2">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="AccountMarket.html">Account Market</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="eworker.html">For Workers</a></li>
+            </ol>
+        </div>
+        <div class="ftrcontainer ftritem2">
+            <ol>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ol>
+        </div></div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script
+src="https://www.paypal.com/sdk/js?client-id=ASUpPBPOwFJ7W4j13D_lCLF3riZxJcLd63Wp_4fB9DnIifsfjw6C9I886hBxB87hGXwIWcJvptstuaZv"
+>
+</script>
+    <script src="accountmarket.js"></script>
+</body>
+</html>

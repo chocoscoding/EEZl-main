@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6526390f69.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <link rel="stylesheet" href="Jobs.css">
+    <title>Jobs</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+        <div class="logo"><img src="ee.jpg" alt=""></div>
+ 
+        </div>
+        <ul>
+            <li ><a href="index.html">Home</a> </li>
+           <li> <a href="services.html">Services</a> </li>
+            <li><a href="">Market</a> </li>
+            <li><a href="">Contact</a> </li>
+        </ul>
+        <div class="account">
+       <div class="login"> <a href="login.html">Login</a></div>
+        <div class="signup"><a href="signup.html">SignUp</a></div>
+        </div>
+    </nav>
+    <header>
+        <div class="main-text" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+             Become A Major Part of Eezl
+        </div>
+        <div class="main-text2" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="700">
+            Use your skills and experience to gain massive income and have fun alongside
+       </div>
+       <div class="to-act">
+           <button class="toact2">BECOME A COACH</button>
+        <button class="toact">BECOME A BOOSTER</button>  
+   </div>
+    </header>
+
+    <section class="boostingr">
+        <h2 data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="100" >Reasons why we are the best option for you</h2> <br> <br>
+        <div class="card-container">
+            <div class="card-inner">
+                <div class="card1" data-aos="slide-up" data-aos-easing="ease-out"  data-aos-duration="120">
+                    <div class="card-top1">
+                        PROJECTS AVAILABILITY
+                    </div>
+                    <div class="card-text">
+                       Our services has always been preferred by a wide variety of people. <br> This is why we always have available jobs to work on.
+                    </div>
+                </div>
+                <div class="card2" data-aos="slide-up" data-aos-easing="ease-out"  data-aos-duration="120">
+                    <div class="card-top2">
+                        EASY TO USE DASHBOARD
+                    </div>
+                    <div class="card-text">
+                        We have a good and easy to understand web design. <br> Which makes it easeier for everyone to get things done quick and effectively.
+                    </div>
+                </div>
+                <div class="card3" data-aos="slide-up" data-aos-easing="ease-out"  data-aos-duration="120">
+                    <div class="card-top3">
+                        HIGH PAY RATE
+                    </div>
+                    <div class="card-text">
+                        We don't charge any unnecessary price, or cut your gain in any way. <br> You can also get tips from customers.
+                    </div>
+                </div>
+                <div class="card4" data-aos="slide-up" data-aos-easing="ease-out"  data-aos-duration="120">
+                    <div class="card-top4">
+                        GREAT COMMUNITY
+                    </div>
+                    <div class="card-text">
+                        You will have a great community of like minded people. <br>   Where you can share you thoughts, ideas e.t.c
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <!--<div class="gradient">
+            <div class="gradient-text">
+               <b> Your First</b> <br>
+                Step In Joing  <br>
+                 A Great Company.
+            </div>
+        </div>-->
+        <div class="form-container">
+            <div class="title">Let's get started</div>
+            <div class="content">
+              <form action="#">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Discord Username</span>
+                    <input type="text" placeholder="Enter your username" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your email" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter your number" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Birthday</span>
+                    <input type="date" placeholder="Enter your date of birth" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Nationality</span>
+                    <input type="text" placeholder="Country" required>
+                  </div>
+                </div>
+                <div class="gender-details">
+                  <input type="radio" name="gender" id="dot-1">
+                  <input type="radio" name="gender" id="dot-2">
+                  <input type="radio" name="gender" id="dot-3">
+                  <span class="gender-title">Gender</span>
+                  <div class="category">
+                    <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                  </label>
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="gender">Prefer not to say</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="button">
+                  <input type="submit" value="Register">
+                  <p>You will receive a mail soon, you wouldbe given info on the next step</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        
+    </section>
+
+    <footer>
+        <h2>Eezl</h2>
+        <div class="footer-container">
+        <div class="footer-div">
+        <p>Get ahead everyone with topdeals and  <br>news when you subscribe to our newsletter.</p>
+        <form action="" method="get">
+            <label for="FullName">FullName</label>
+            <input type="text" name="FullName" id="FullName" placeholder="Fullname">
+            <label for="FullName">FullName</label>
+            <input type="text" name="FullName" id="FullName" placeholder="Fullname">
+
+            <button class="subscribe" type="submit"><b> SUBSCRIBE</b></button>
+
+        </form>
+        
+        </div>
+        <div class="footer-div2">
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">BOOSTING</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="Jobs.html">JOBS</a></li>
+        </div>
+        <div class="footer-div2">
+            <ul>
+            <li><a href=""><i class='bx bxl-facebook-circle'></i></a></li>
+            <li><a href=""><i class='bx bxl-linkedin' ></i></a></li>
+            <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+            <li><a href=""><i class='bx bxl-instagram-alt'></i></a></li>
+        </div>
+
+        
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>    
+</body>
+
+</html>

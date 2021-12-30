@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="nandf.css">
+    <link rel="stylesheet" href="services.css" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" sizes="48x48" href="icon_48x48.png" />
+    <link rel="icon" type="image/png" sizes="72x72" href="icon_72x72.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="icon_96x96.png" />
+    <link rel="icon" type="image/png" sizes="168x168" href="icon_168x168.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icon_192x192.png" />
+    <link rel="icon" type="image/png" sizes="602x602" href="icon_602x602.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="192x180" href="apple-touch-icon.png" />
+    <meta name="theme-color" content="#f5f5f5"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <title>Eezl Services</title>
+  </head>
+  <body>
+    
+    <div class="pre">
+      <div class="inner">
+        <img src="pre.png" alt="">
+      </div>
+      <p id="pret">Hold up </p>
+    </div>
+    <nav>
+      <div class="logo-container">
+      <div class="logo"><img src="ee.jpg" alt=""></div>
+      <div class="logo-text"></div>
+      </div>
+      <div class="open" onclick="opennav()"><i class="fas fa-bars"></i></div>
+      <div class="side">
+          <div class="close" onclick="closenav()"><i class="fas fa-times"></i></div>
+      <ul id="nav1">
+          <li ><a href="index.html">Home</a> </li>
+         <li> <a href="services.html" class="active-page-link">Services</a> </li>
+          <li><a href="Accountmarket.html">Market</a> </li>
+          <li><a href="">Contact</a> </li>
+      </ul>
+      <ul class="account">
+     <li class="login" onclick="window.location.href = 'login.html'">Login</li>
+      <li class="signup" onclick="window.location.href = 'signup.html'">SignUp</li>
+      </ul>
+      <div onclick="window.location.href='Account.html'" class="dashboard">
+          <i class="fas fa-user-circle"></i>&nbsp;Account
+      </div>
+  </div>
+  </nav>
+    
+    <header class="header-r">
+      <div class="image-section">
+        <img src="League Of Legends Champions.jpg" alt="" />
+      </div>
+      <div class="text-section">
+        <h3>
+          That top<br />notch service is<br />
+          just a <b>Click</b> away...
+        </h3>
+        <p>
+          We work so hard to deliver good experience and value for what you pay
+          for.
+        </p>
+        <div class="action-section">
+          <button class="action-1" >I WANT TO BUY</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="openedpay">
+        <h5 id="note">
+          TWITCH WOULD BE USED FOR ANY KIND OF STREAMING
+        </h5>
+        <br>
+        <div class="buttonline">
+          <button onclick="openpayClose()">
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
+        <div id="open1" class="open-content">
+          <div id="paypal-btn-container"></div>
+        </div>
+        <div id="open3" class="open-content2">
+          <h4>A error occured, Try Again!</h4>
+          <i class="bx bxs-x-circle"></i>
+        </div>
+        <div id="open2" class="open-content-form">
+          <h2>Finish Service Signup</h2>
+          <div>
+            <div class="user-box">
+              <input type="text" id="gameusername" name="" required />
+              <label>Game Username</label>
+            </div>
+            <div class="user-box">
+              <input type="text" id="gamepassword" name="" required />
+              <label>Game Password</label>
+            </div>
+            <div class="submitbox">
+              <button id="wrsb" onclick="wrservicePodt()">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-selector">
+        <h2>LOL: WR</h2>
+        <i class="bx bx-mobile-alt"></i>
+      </div>
+      <section class="service">
+        <div class="service-head">
+          <button
+          class="wrbutton"
+          id="defaultOpen"
+          onclick="wrChange(event, 'rankBoosting')"
+          >Rank Boosting</button
+          ><span>|
+
+          <!-- </span><button class="wrbutton" onclick="wrChange(event, 'placements')">Placements</button><span>| -->
+
+          </span>
+            <button class="wrbutton" onclick="wrChange(event, 'rankedWins')">Ranked Wins</button
+          ><span>|</span>
+          <button class="wrbutton" onclick="wrChange(event, 'normals')">Normals</button>
+        </div>
+        <div class="serviceMainContainer" id="rankBoosting">
+          <div class="serviceMainContainer-body">
+            <div class="service-main">
+              <div class="service-main-inner-Iron" id="serviceMainInner">
+                <div class="show-rank-selection">
+                  <div class="text">
+                    <h2>Current League</h2>
+                    <p>Choose your current Rank and Division</p>
+                  </div>
+                  <div class="image" id="clickedRank"></div>
+                </div>
+                <div class="main-rank-selection">
+                  <div class="ranks" id="rank-c">
+                    <button onclick="Iron()" class="rankin" id="Iron">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Iron.png?alt=media&token=3f04f70a-8424-4913-82fd-ac4938e874da" alt="" />
+                    </button>
+                    <button onclick="bronze()" class="rankin" id="Bronze">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Bronze.png?alt=media&token=9d9ab5fe-d983-4594-b58a-69470c81db15" alt="" />
+                    </button>
+                    <button onclick="Silver()" class="rankin" id="Silver">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Silver.png?alt=media&token=75395769-f1e0-46cf-aa5a-7b9e3b617ccf" alt="" />
+                    </button>
+                    <button onclick="Gold()" class="rankin" id="Gold">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Gold.png?alt=media&token=b72cfc91-eb4e-4df1-83b6-82969ac75f6b" alt="" />
+                    </button>
+                    <button onclick="Platinum()" class="rankin" id="Platinum">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Platinum.png?alt=media&token=e0fee166-d535-4245-8400-e1fe9148b663" alt="" />
+                    </button>
+                    <button onclick="Emerald()" class="rankin" id="Emerald">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Emerald-1.png?alt=media&token=1314acaa-184c-47b0-bd1c-4bbb020973d5" alt="" />
+                    </button>
+                    <button onclick="Diamond()" class="rankin" id="Diamond">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Diamond.png?alt=media&token=d8ad593b-78a9-45e4-903f-597f7a195fc4" alt="" />
+                    </button>
+                  </div>
+                
+                  <div class="mark-Iron" id="mark-c">
+                    <button id="marknum" class="mark-no">IV</button>
+                    <button id="marknum" class="mark-no">III</button>
+                    <button id="marknum" class="mark-no">II</button>
+                    <button id="marknum" class="mark-no">I</button>
+                  </div>
+
+                </div>
+                <div class="others">
+                  <div class="custom-select" id="input3">
+                    <select id="Mark-no1" name="Mark" required>
+                      <option value="">Pick Your Mark</option>
+                      <option class="mark0" value="0 Mark">0 Mark</option>
+                      <option class="mark1" value="1 Mark">1 Mark</option>
+                      <option class="marks2" value="2 Marks">2 Marks</option>
+                      <option class="marks3" value="3 Marks">3 Marks</option>
+                      <option class="marks4" value="4 Marks">4 Marks</option>
+                      <option class="marks5" value="5 Marks">5 Marks</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="service-main-inner-Iron-Desired" id="serviceMainInnerd">
+                <div class="show-rank-selection">
+                  <div class="text">
+                    <h2>Desired League</h2>
+                    <p>Choose your Desired Rank and Division</p>
+                  </div>
+                  <div class="image" id="clickedRank1"></div>
+                </div>
+                <div class="main-rank-selection">
+                  <div class="ranks" id="rank-d">
+                    <button onclick="ironDesired()" class="rankin" id="Iron" >
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Iron.png?alt=media&token=3f04f70a-8424-4913-82fd-ac4938e874da" alt="" />
+                    </button>
+                    <button
+                      onclick="bronzeDesired()"
+                      class="rankin"
+                      id="Bronze"
+                    >
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Bronze.png?alt=media&token=9d9ab5fe-d983-4594-b58a-69470c81db15" alt="" />
+                    </button>
+                    <button
+                      onclick="silverDesired()"
+                      class="rankin"
+                      id="Silver"
+                    >
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Silver.png?alt=media&token=75395769-f1e0-46cf-aa5a-7b9e3b617ccf" alt="" />
+                    </button>
+                    <button onclick="goldDesired()" class="rankin" id="Gold">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Gold.png?alt=media&token=b72cfc91-eb4e-4df1-83b6-82969ac75f6b" alt="" />
+                    </button>
+                    <button
+                      onclick="platinumDesired()"
+                      class="rankin"
+                      id="Platinum"
+                    >
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Platinum.png?alt=media&token=e0fee166-d535-4245-8400-e1fe9148b663" alt="" />
+                    </button>
+                    <button
+                      onclick="emeraldDesired()"
+                      class="rankin"
+                      id="Emerald"
+                    >
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Emerald-1.png?alt=media&token=1314acaa-184c-47b0-bd1c-4bbb020973d5" alt="" />
+                    </button>
+                    <button
+                      onclick="diamondDesired()"
+                      class="rankin"
+                      id="Diamond"
+                    >
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Diamond.png?alt=media&token=d8ad593b-78a9-45e4-903f-597f7a195fc4" alt="" />
+                    </button>
+                    <button
+                      onclick="masterDesired()"
+                      class="rankin"
+                      id="Master"
+                    >
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Master.png?alt=media&token=4ad2994b-e278-4b77-8238-a0fc09fe15a1" alt="" />
+                    </button>
+                  </div>
+                  <div class="mark-Iron-Desired" id="mark-d">
+                      <button id="marknum" class="mark-no">IV</button>
+                      <button id="marknum" class="mark-no">III</button>
+                      <button id="marknum" class="mark-no">II</button>
+                    <button id="marknum" class="mark-no">I</button>
+                  </div>
+                </div>
+                <div class="others">
+                  <div class="custom-select" id="input2">
+                    <select id="device" name="Gender" required>
+                      <option value="Device">Pick Your Device</option>
+                      <option value="Android">Android</option>
+                      <option value="Ios">Ios</option>
+                    </select>
+                  </div>
+                  <div class="custom-select" id="input2">
+                    <select id="location" name="location" required>
+                      <option value="Location">Desired Location</option>
+                      <option value="North America">North America</option>
+                      <option value="Europe">Europe</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Korea">Korea</option>
+                      <option value="SEA/OCE">SEA/OCE</option>
+                      <option value="Mexxico">Mexxico</option>
+                      <option value="Russia">Russia</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="second-part" id="s1">
+              <div class="Extras">
+                <input type="checkbox" id="toggle2" class="checkbox2" />
+                <label for="toggle2" class="switch"></label>
+                <p>
+                  <i class='bx bxs-user-plus' ></i>Play With Your Booster<sup>+40%</sup>
+                </p>
+              </div>
+
+              <div class="Extras">
+                <input type="checkbox" id="toggle3" class="checkbox3" />
+                <label for="toggle3" class="switch"></label>
+                <p>
+                  <i class='bx bxs-diamond' ></i>First Class Order<sup>+20%</sup>
+                </p>
+              </div>
+
+              <div class="Extras">
+                <input type="checkbox" id="toggle4" class="checkbox4" />
+                <label for="toggle4" class="switch"></label>
+                <p >
+                  <i class='bx bxs-video' ></i>With Streaming<sup>+15%</sup>
+                </p>
+              </div>
+
+              <div class="payment">
+                <div class="total">
+                  TOTAL:
+                  <p id="totalText">$0</p>
+                </div>
+                <div class="total2">
+                  Boosting from:
+                  <p id="totalText2">??</p>
+                  to
+                  <p id="totalText4">??</p>
+                </div>
+               <div class="total2">
+                  <p>It will take <span id="rbdaystaken"></span>days max</p>
+                </div>
+                <div class="totalerror">
+                  <p id="totalTexterror">Please, include your mark</p>
+                </div>
+                <div class="paybtn" onclick="openpay()">
+                  <button>PAY NOW</button>
+                </div>
+
+                <div class="payment-options">
+                  <div class="POimage-container">
+                    <img src="Payment.png" alt="paypal" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--placements-->
+
+       <!-- <div class="serviceMainContainer" id="placements">
+          <div class="serviceMainContainer-body2">
+            <div class="service-main2">
+              <div class="service-main-inner-Placement" id="serviceMainInner">
+                <div class="placement-top-text">
+                  <div class="placement-image">
+                    <img src="Unranked.png" alt="" />
+                  </div>
+                  <div class="placement-top-text-textarea">
+                    <h3>Season End Rank</h3>
+                    <p>Please select your Season End Rank and Division</p>
+                  </div>
+                </div>
+
+                <div class="others2">
+                  <div class="custom-select" id="input9">
+                    <select id="placementdevice" name="device" required>
+                      <option value="none">Device</option>
+                      <option value="Android">Android</option>
+                      <option value="Ios">Ios</option>
+                    </select>
+                  </div>
+                  <div class="custom-select" id="input10">
+                    <select id="placementloaction" name="location" required>
+                      <option value="none">Location</option>
+                      <option value="North America">North America</option>
+                      <option value="Europe">Europe</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Korea">Korea</option>
+                      <option value="SEA/OCE">SEA/OCE</option>
+                      <option value="Mexxico">Mexxico</option>
+                      <option value="Russia">Russia</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="others3">
+                  <div class="custom-select" id="input11">
+                    <select id="Unranked" name="Unranked" required>
+                      <option value="Unranked">Unranked</option>
+                      <option value="Unranked">Unranked</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="service-main-inner-Placement2" id="serviceMainInner">
+                <div class="others4">
+                  <div class="rangetextbody">
+                    <p class="rangetext" id="rangeText"></p>
+                    <b>Game/s</b>
+                  </div>
+                  <input
+                    type="range"
+                    min="1"
+                    max="10"
+                    value="50"
+                    class="slider"
+                    id="myRange"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="second-part2" id="s2">
+              <div class="Extras2">
+                <input type="checkbox" id="toggle7" class="checkbox7" />
+                <label for="toggle7" class="switch"></label>
+                <p>
+                  <i class='bx bxs-user-plus' ></i>Play With Your Booser<sup>+40%</sup>
+                </p>
+              </div>
+
+              <div class="Extras2">
+                <input type="checkbox" id="toggle8" class="checkbox8" />
+                <label for="toggle8" class="switch"></label>
+                <p>
+                  <i class='bx bxs-diamond' ></i>First Class Order<sup>+20%</sup>
+                </p>
+              </div>
+
+              <div class="Extras2">
+                <input type="checkbox" id="toggle9" class="checkbox9" />
+                <label for="toggle9" class="switch"></label>
+                <p>
+                  <i class='bx bxs-video' ></i>With Streaming<sup>+15%</sup>
+                </p>
+              </div>
+
+              <div class="payment">
+                <div class="total">
+                  TOTAL:
+                  <p id="totalText" class="pptext">$0</p>
+                </div>
+                <div class="total2">
+                  Boosting from:
+                  <p id="totalText2"></p>
+                  to
+                  <p id="totalText4"></p>
+                </div>
+                <div cla <div class="total2">
+                  <p>It will take <span id="daystaken"></span>days max</p>
+                </div>ss="paybtn" onclick="openpay()" onclick="openpay()">
+                  <button>PAY NOW</button>
+                </div>
+
+                <div class="payment-options">
+                  <div class="POimage2-container">
+                    <img src="Payment.png" alt="paypal" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+        <!--Ranked Wins-->
+
+        <div class="serviceMainContainer" id="rankedWins">
+          <div class="serviceMainContainer-body">
+            <div class="service-main">
+              <div class="service-main-inner-Iron" id="serviceMainInner3">
+                <div class="show-rank-selection">
+                  <div class="text">
+                    <h2>Current League</h2>
+                    <p>Choose your current Rank and Division</p>
+                  </div>
+                  <div class="image" id="clickedRank3"></div>
+                </div>
+                <div class="main-rank-selection">
+                  <div class="ranks" id="ranked-c">
+                    <button onclick="Iron3()" class="rankin" id="Iron">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Iron.png?alt=media&token=3f04f70a-8424-4913-82fd-ac4938e874da" alt="" />
+                    </button>
+                    <button onclick="Bronze3()" class="rankin" id="Bronze">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Bronze.png?alt=media&token=9d9ab5fe-d983-4594-b58a-69470c81db15" alt="" />
+                    </button>
+                    <button onclick="Silver3()" class="rankin" id="Silver">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Silver.png?alt=media&token=75395769-f1e0-46cf-aa5a-7b9e3b617ccf" alt="" />
+                    </button>
+                    <button onclick="Gold3()" class="rankin" id="Gold">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Gold.png?alt=media&token=b72cfc91-eb4e-4df1-83b6-82969ac75f6b" alt="" />
+                    </button>
+                    <button onclick="Platinum3()" class="rankin" id="Platinum">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Platinum.png?alt=media&token=e0fee166-d535-4245-8400-e1fe9148b663" alt="" />
+                    </button>
+                    <button onclick="Emerald3()" class="rankin" id="Emerald">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Emerald-1.png?alt=media&token=1314acaa-184c-47b0-bd1c-4bbb020973d5" alt="" />
+                    </button>
+                    <button onclick="Diamond3()" class="rankin" id="Diamond">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Diamond.png?alt=media&token=d8ad593b-78a9-45e4-903f-597f7a195fc4" alt="" />
+                    </button>
+                    <button onclick="Master3()" class="rankin" id="Master">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/eezl-2d5a5.appspot.com/o/Master.png?alt=media&token=4ad2994b-e278-4b77-8238-a0fc09fe15a1" alt="" />
+                    </button>
+                  </div>
+                  <div class="mark-Iron" id="marked-c">
+                      <button id="marknum" class="mark-no">IV</button>
+                      <button id="marknum" class="mark-no">III</button>
+                      <button id="marknum" class="mark-no">II</button>
+                      <button id="marknum" class="mark-no">I</button>
+                  </div>
+                </div>
+                <div class="others">
+                  <div class="custom-select" id="inputp3a">
+                    <select id="Mark-no1" name="Mark" required>
+                      <option value="">Pick Your Mark</option>
+                      <option class="mark0" value="0 Mark">0 Mark</option>
+                      <option class="mark1" value="1 Mark">1 Mark</option>
+                      <option class="marks2" value="2 Marks">2 Marks</option>
+                      <option class="marks3b" value="3 Marks">3 Marks</option>
+                      <option class="marks4c" value="4 Marks">4 Marks</option>
+                      <option class="marks5d" value="5 Marks">5 Marks</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-main-inner-Placement2" id="serviceMainInner">
+                <div class="others4">
+                  <div class="rangetextbody">
+                    <p class="rangetext" id="rangeText2"></p>
+                    <b>Win/s</b>
+                  </div>
+                  <input
+                    type="range"
+                    min="1"
+                    max="15"
+                    value="50"
+                    class="slider"
+                    id="myRange2"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="second-part" id="s3">
+              <div class="Extras">
+                <input type="checkbox" id="toggle11" class="checkbox11" />
+                <label for="toggle11" class="switch"></label>
+                <p>
+                  <i class='bx bxs-user-plus' ></i>Play With Your Booser<sup>+40%</sup>
+                </p>
+              </div>
+
+              <div class="Extras">
+                <input type="checkbox" id="toggle12" class="checkbox12" />
+                <label for="toggle12" class="switch"></label>
+                <p>
+                  <i class='bx bxs-diamond' ></i>First Class Order<sup>+20%</sup>
+                </p>
+              </div>
+
+              <div class="Extras">
+                <input type="checkbox" id="toggle13" class="checkbox13" />
+                <label for="toggle13" class="switch"></label>
+                <p>
+                  <i class='bx bxs-video' ></i>With Streaming<sup>+15%</sup>
+                </p>
+              </div>
+
+
+              <div class="payment">
+                <div class="total">
+                  TOTAL:
+                  <p id="totalText" class="rwtotalp">$0</p>
+                </div>
+                <div class="total2">
+                  <p id="totalText2" class="rwtotalt2"></p>
+                </div>
+                <div class="paybtn" onclick="openpay()" onclick="openpay()">
+                  <button>PAY NOW</button>
+                </div>
+ <div class="total2">
+   <p>It will take <span id="rwdaystaken"></span>days max</p>
+ </div>
+                <div class="payment-options">
+                  <div class="POimage-container">
+                    <img src="Payment.png" alt="paypal" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Normals-->
+        <div class="serviceMainContainer" id="normals">
+          <div class="serviceMainContainer-body">
+            <div class="service-main-normal">
+              <div class="service-main-inner-normal">
+                <div class="normals-nog">
+                  <div class="nog-image">
+                    <img src="Provisional.png" alt="" />
+                  </div>
+                  <div class="text">
+                    <h2>Number of Wins</h2>
+                    <p>Please select your number of Wins</p>
+                  </div>
+                </div>
+                <div class="nog-slider">
+                  <div class="rangetextbody">
+                    <p class="rangetext" id="rangeText3"></p>
+                    <b>Win/s</b>
+                  </div>
+                  <input
+                    type="range"
+                    min="1"
+                    max="30"
+                    value="1"
+                    class="slider"
+                    id="myRange3"
+                    
+                  />
+                </div>
+
+                <div class="others">
+                  <div class="custom-select" id="input2">
+                    <select id="normaldevice" name="normaldevice" required>
+                      <option value="Device">Pick Your Device</option>
+                      <option value="Android">Android</option>
+                      <option value="Ios">Ios</option>
+                    </select>
+                  </div>
+                  <div class="custom-select" id="input2">
+                    <select id="normallocation" name="normallocation" required>
+                      <option value="Location">Desired Location</option>
+                      <option value="North America">North America</option>
+                      <option value="Europe">Europe</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Korea">Korea</option>
+                      <option value="SEA/OCE">SEA/OCE</option>
+                      <option value="Mexxico">Mexxico</option>
+                      <option value="Russia">Russia</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="second-part-normal" id="s4">
+              <div class="Extras2">
+                <p>
+                  There are no add-ons for this
+                </p>
+              </div>
+
+
+              <div class="payment">
+                <div class="total">
+                  TOTAL:
+                  <p id="totalText" class="totalText4">$10</p>
+                </div>
+                <div class="total2">
+                  At least<p id="totalText2" class="ttnor">-</p> will be played
+                </div>
+                <div class="total2">
+                  <p>It will take <span id="normaldaystaken"></span>days max</p>
+                </div>
+                <div class="paybtn" onclick="openpay()">
+                  <button onclick="openpay">PAY NOW</button>
+                </div>
+                <div class="payment-options">
+                  <div class="POimage2-container">
+                    <img src="Payment.png" alt="paypal" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="assurance">
+      <div class="asi">
+        <img src="pngegg (1).png" alt="">
+      </div>
+      <div class="asi2">
+        <i class='bx bx-trophy' ></i> <p>We gaurante 85% win rate <br>
+          <b>Don't worry Pal, our Boosters go you covered on this.</b> <br>
+          <b id="non">You are not going to be losing matches anyhow... It's winning all the way</b>
+        </p>
+      </div>
+    </section>
+    <section class="what-you-get">
+      <p>What's in for you</p>
+      <div class="wyg">
+        <div class="items 1">
+          <i class='bx bx-receipt'></i>
+          <h5>Refund Policy <i class="far fa-question-circle"></i> </h5>
+        </div>
+        <div class="items 2">
+          <i class='bx bx-timer'></i>
+          <h5> Light-speed Delivery <i class="far fa-question-circle"></i> </h5>
+        </div>
+        <div class="items 3">
+          <i class='bx bx-support' ></i>
+          <h5>24/7 Customer support <i class="far fa-question-circle"></i> </h5>
+        </div>
+        <div class="items 4">
+          <i class='bx bx-chat' ></i>
+          <h5> Chat with boosters <i class="far fa-question-circle"></i> </h5>
+        </div>
+        <div class="items 5">
+          <i class='bx bx-grid-alt'></i>
+          <h5>Easy Management <i class="far fa-question-circle"></i> </h5>
+        </div>
+        <div class="items 6">
+          <i class='bx bx-target-lock'></i>
+          <h5> Increase rank and bla bla <i class="far fa-question-circle"></i> </h5>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="how-to-body">
+      <h5>How to use our service</h5>
+      <div class="how-to">
+        <div class="img-cont">
+      <img src="howto.png" alt="">
+      </div>
+      <div class="process">
+        <div class="process-item-cont">
+          <div class="itemno">1</div>
+        <div class="process-item">
+          Choose the specific service you want
+        </div>
+        </div>
+        <i class='bx bxs-down-arrow' ></i>
+        <div class="process-item-cont">
+          <div class="itemno">2</div>
+        <div class="process-item">
+          Pick the add-ons you want
+        </div>
+        </div>
+        <i class='bx bxs-down-arrow' ></i>
+        <div class="process-item-cont">
+          <div class="itemno">3</div>
+        <div class="process-item">
+          Click Pay. <br>
+          <i>(You would be redirected to login if you are not logged in) </i>
+        </div>
+        </div>
+        <i class='bx bxs-down-arrow' ></i>
+        <div class="process-item-cont">
+          <div class="itemno">4</div>
+        <div class="process-item">
+          Once your payment is verified, a form will pop up. <br> You will need to fill in some other informations such as game Login and password.
+        </div>
+        </div>
+        <i class='bx bxs-down-arrow' ></i>
+        <div class="process-item-cont">
+          <div class="itemno">5</div>
+        <div class="process-item">
+          You would receive a mail, your profile would be updated with the nessecary detail and you will be connected with a booster  <i>(This usually takes 5 minutes max)</i>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+    </section>
+    <section class="faq">
+      <h1>FAQ</h1>
+      <div class="faq_body">
+        <div class="item">
+          <div class="item_top">
+            <h3>How long will it take for my booster to start ?</h3> <div id="clsbxm" class="closebox"> <i id="clsbxinner" class="fas fa-angle-down"></i> </div>
+          </div>
+          <br>
+          <div class="ta">
+            <p>The process of getting a booster for you is: <br>
+              Sending notifications to our large database of boosters suited for what service you want, any booster who picks it is then matched to you.
+                 This usually takes between 3-5 minutes
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item_top">
+            <h3>What happens if I want a refund ?</h3> <div id="clsbxm" class="closebox"> <i id="clsbxinner" class="fas fa-angle-down"></i> </div>
+          </div>
+          <br>
+          <div class="ta">
+            <p>In cases where you may have purchased the wrong service, you are not satisfied with our service e.t.c <br> And you feel you want your money back: Our officials would access your situation and give you a 98% max refund on your service.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item_top">
+            <h3>Will my account get blocked ?</h3> <div id="clsbxm" class="closebox"> <i id="clsbxinner" class="fas fa-angle-down"></i> </div>
+          </div>
+          <br>
+          <div class="ta">
+            <p>Our boosters are well experienced and careful enough to not make mistakes that will get your account blocked in any way.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item_top">
+            <h3>How can I get discounts ?</h3> <div id="clsbxm" class="closebox"> <i id="clsbxinner" class="fas fa-angle-down"></i> </div>
+          </div>
+          <br>
+          <div class="ta">
+            <p> Most of the low quality services out there offer invalueable or intangible discunts but we don't. <br>
+              Discount will only popup on days like Black Friday.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item_top">
+            <h3>What if My transaction fails but i am debited ?</h3> <div id="clsbxm" class="closebox"> <i id="clsbxinner" class="fas fa-angle-down"></i> </div>
+          </div>
+          <br>
+          <div class="ta">
+            <p> In case this happens. Kindly send us a screenshot of the payment Receipt as we would try to verify on our database. If there is a match, we would guid you through a special process to help you with the service, <br>
+              Else, Report to the Bank or your respective payment method immideately.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item_top">
+            <h3>What happens if the booster does'nt finish on time ?</h3> <div id="clsbxm" class="closebox"> <i id="clsbxinner" class="fas fa-angle-down"></i> </div>
+          </div>
+          <br>
+          <div class="ta">
+            <p> In a case like this, the main decison is in your hands. <br>
+              It's either you end the service and get a refund for the part not completed or you allow the booster finish it for no extra cost.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_cont"> 
+      <div class="ftrcontainer ftritem1">
+          <i>Do you want to get the best deals and latest info that will benefit you? Then subscribe to our newsletter. <br> We don't send more than 1 mail a week👌</i> <br>
+          <input type="email" name="newsletter" id="newsletter" placeholder='example@email.com'> <br>
+          <button id="submitn">Submit</button>
+      </div>
+      <div class="ftrcontainer ftritem2">
+          <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="AccountMarket.html">Account Market</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="eworker.html">For Workers</a></li>
+          </ol>
+      </div>
+      <div class="ftrcontainer ftritem2">
+          <ol>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Instagram</a></li>
+          </ol>
+      </div></div>
+  </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=ASUpPBPOwFJ7W4j13D_lCLF3riZxJcLd63Wp_4fB9DnIifsfjw6C9I886hBxB87hGXwIWcJvptstuaZv"
+    >
+    </script>
+    <script src="dropImage.js"></script>
+    <script src="wrservicetest.js"></script>
+    <script src="pmnt.js"></script>
+
+  </body>
+</html>
+
+
+
